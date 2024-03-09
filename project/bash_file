@@ -1,0 +1,8 @@
+#!/bin/bash
+ec2-user
+sudo -i
+useradd u1
+sudo yum install httpd -y
+cd /var/www/html
+echo "welcome to flipkart" >index.html
+service httpd restart
